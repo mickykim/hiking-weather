@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Props } from "./index";
 
 export const FooterContainer = styled.footer`
     background-color: ${(props) => props.theme.black};

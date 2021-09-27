@@ -21,7 +21,7 @@ const Footer: React.FC<Props> = () => {
                             <LinkMenu>
                                 <LinkTitle>
                                     LinkTitle
-                                    <FooterLink>Link</FooterLink>
+                                    <FooterLink to="">Link</FooterLink>
                                 </LinkTitle>
                             </LinkMenu>
                         </LinkWrapper>
