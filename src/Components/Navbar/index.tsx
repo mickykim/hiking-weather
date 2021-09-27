@@ -37,7 +37,7 @@ const Navbar: React.FC<Props> = ({ toggleSidebar, logoLink = "main" }) => {
                 <Logo to={logoLink}>HikingWeather</Logo>
                 <MobileLogo to={logoLink}>HW</MobileLogo>
                 <Searchbar active={scrollNav} />
-                <NavigationLinks headerOffset={-50} />
+                <NavigationLinks headerOffset={70} />
                 <MobileIcon>
                     <FaBars onClick={toggleSidebar} />
                 </MobileIcon>

@@ -30,6 +30,18 @@ export const airData: Data = {
     on air quality.`,
     colorTheme: true,
     reverse: true,
+    img: require("../../assets/images/scienceNature.svg").default,
+
+    altImg: "weather",
+};
+
+export const enjoyData: Data = {
+    id: "section3",
+    topText: "Enjoy",
+    heading: "Experience perfection",
+    subtitle: `Stop worrying about the possibilities and enjoy the present`,
+    colorTheme: false,
+    reverse: false,
     img: require("../../assets/images/hiking.svg").default,
 
     altImg: "weather",
