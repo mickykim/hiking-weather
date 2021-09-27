@@ -112,6 +112,6 @@ export const MobileIcon = styled.div`
         margin-right: 1rem;
         cursor: pointer;
         font-size: 1.2rem;
-        color: ${(props) => props.theme.primaryText};
+        color: ${(props) => props.theme.primaryTextDark};
     }
 `;

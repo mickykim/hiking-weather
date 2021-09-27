@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     SearchbarInput,
     ButtonContainer,
@@ -13,9 +13,20 @@ export interface Props {
 }
 
 const Searchbar: React.FC<Props> = ({ lg, active }) => {
+    const [searchQuery, setSearchQuery] = useState<string>("");
+
+    const searchQueryonChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchQuery(e.target.value);
+    };
+
     return (
         <SearchbarContainer active={active}>
-            <SearchbarInput lg={lg} placeholder="Enter your destination..." />
+            <SearchbarInput
+                lg={lg}
+                placeholder="Enter your destination..."
+                value={searchQuery}
+                onChange={searchQueryonChange}
+            />
 
             <ButtonContainer lg={lg}>
                 <FaSearch />

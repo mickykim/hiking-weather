@@ -18,7 +18,7 @@ export default {
     secondary: "#e76f51",
     primaryNavbar: "#264653",
     primaryText: "#120F06",
-    primaryTextDark: "#F9F9FB",
+    primaryTextDark: "#FFFFFF",
     primaryTextDarkHover: "#E9E5E1",
     secondaryText: "#CF2B52",
     secondaryTextDark: "#D4D648",

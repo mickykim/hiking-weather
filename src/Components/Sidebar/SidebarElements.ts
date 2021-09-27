@@ -10,7 +10,7 @@ export const SidebarContainer = styled.aside<Props>`
     z-index: 99;
     width: 100%;
     height: 100%;
-    background: ${(props) => props.theme.primary};
+    background: ${(props) => props.theme.primaryNavbar};
     transition: all 0.3s ease-in-out;
     top: ${(props) => (props.isOpen ? "0" : "-100%")};
     opacity: ${(props) => (props.isOpen ? "100%" : "0")};
@@ -29,7 +29,7 @@ export const Icon = styled.div`
     top: 1.2rem;
     right: 1.5rem;
     font-size: 2rem;
-    color: ${(props) => props.theme.primaryText};
+    color: ${(props) => props.theme.primaryTextDark};
     cursor: pointer;
 `;
 export const Menu = styled.ul`
@@ -50,7 +50,7 @@ export const ScrollLink = styled(LinkScroll)`
     text-decoration: none;
     font-size: 1.5rem;
     transition: color 0.2s ease-in-out;
-    color: ${(props) => props.theme.primaryText};
+    color: ${(props) => props.theme.primaryTextDark};
     cursor: pointer;
     &:hover {
         color: ${(props) => props.theme.secondaryText};
@@ -64,6 +64,7 @@ export const ButtonWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1rem;
 `;
 
 export const ButtonLink = styled(LinkRouter)`

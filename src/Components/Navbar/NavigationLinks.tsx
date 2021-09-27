@@ -28,7 +28,7 @@ const NavigationLinks: React.FC<Props> = ({ headerOffset }) => {
                     spy={true}
                     offset={headerOffset}
                 >
-                    About
+                    Explore
                 </NavbarLink>
             </NavbarItem>
             <NavbarItem>
@@ -40,19 +40,7 @@ const NavigationLinks: React.FC<Props> = ({ headerOffset }) => {
                     spy={true}
                     offset={headerOffset}
                 >
-                    Air
-                </NavbarLink>
-            </NavbarItem>
-            <NavbarItem>
-                <NavbarLink
-                    to="section3"
-                    activeClass="active"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={headerOffset}
-                >
-                    Mayo
+                    Air Quality
                 </NavbarLink>
             </NavbarItem>
         </NavbarMenu>

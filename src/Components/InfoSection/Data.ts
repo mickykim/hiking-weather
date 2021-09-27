@@ -12,39 +12,25 @@ type Data = {
 export const aboutData: Data = {
     id: "section1",
     topText: "explore",
-    heading: "Plan your journey",
+    heading: "Plan your adventure",
     subtitle: `Think of your next hiking desination and we will 
     tell you the current hiking conditions.`,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/hiking.svg").default,
+    img: require("../../assets/images/hikingSecondary.svg").default,
     altImg: "weather",
 };
 
 export const airData: Data = {
     id: "section2",
-    topText: "breathe it in",
-    heading: "Air Quality",
+    topText: "Analyze",
+    heading: "Science you can trust",
     subtitle: `We calculate the air quality by checking current 
-    air conditionswith respect to the general guidelines provided 
+    air conditions with respect to the general guidelines provided 
     on air quality.`,
     colorTheme: true,
     reverse: true,
-    img: require("../../assets/images/hikingSecondary.svg").default,
+    img: require("../../assets/images/hiking.svg").default,
 
     altImg: "weather",
-};
-
-export const mayoData: Data = {
-    id: "section3",
-    topText: "pogchamp",
-    heading: "So. Much. MAYO!",
-    subtitle: `I know. Shit's crazy. But I respect the kind of
-    person that would go out and say "Fuck it, I
-    love my mayo and I will eat my mayo." So you go
-    do it. Get your mayo.`,
-    colorTheme: false,
-    reverse: false,
-    img: require("../../assets/images/soMuchMayo.jpg").default,
-    altImg: "mayo",
 };

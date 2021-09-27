@@ -3,7 +3,7 @@ import Sidebar from "../Components/Sidebar";
 import React, { useState } from "react";
 import HeroSection from "../Components/HeroSection";
 import InfoSection from "../Components/InfoSection";
-import { aboutData, airData, mayoData } from "../Components/InfoSection/Data";
+import { aboutData, airData } from "../Components/InfoSection/Data";
 import Footer from "../Components/Footer";
 import CardSection from "../Components/CardSection";
 const Homepage = () => {
@@ -20,7 +20,6 @@ const Homepage = () => {
             {/* <CardSection /> */}
             <InfoSection {...aboutData} />
             <InfoSection {...airData} />
-            <InfoSection {...mayoData} />
             <Footer />
         </div>
     );

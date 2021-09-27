@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Props } from "./index";
 
-export const SearchbarContainer = styled.div<Props>`
+export const SearchbarContainer = styled.form<Props>`
     display: ${(props) => (props.active ? "flex" : "none")};
     align-items: flex-end;
     width: 100%;

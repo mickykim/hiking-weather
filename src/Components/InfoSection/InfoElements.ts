@@ -73,11 +73,11 @@ export const Heading = styled.h1<Props>`
     color: ${(props) => props.theme.primaryText};
     background: linear-gradient(
         -100deg,
-        white 0%,
+        transparent 0%,
         ${(props) =>
-                props.colorTheme ? props.theme.primary : props.theme.orange}
+                props.colorTheme ? props.theme.yellow : props.theme.orange}
             90%,
-        white 100%
+        transparent 100%
     );
     background-size: 100% 120%;
     background-position: 0 60%;
