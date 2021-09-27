@@ -10,10 +10,16 @@ import {
 import { FaBars } from "react-icons/fa";
 import Searchbar from "../Searchbar";
 
-function Navbar({ toggleSidebar }) {
-    const [scrollNav, setScrollNav] = useState(false);
+interface Props {
+    toggleSidebar: () => void;
+    small: boolean;
+}
+
+const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
+    const [scrollNav, setScrollNav] = useState<boolean>(false);
 
     const toggleScrollNav = () => {
+        // Amount scrolled vertically
         if (window.scrollY > 300) {
             setScrollNav(true);
         } else {
@@ -37,6 +43,6 @@ function Navbar({ toggleSidebar }) {
             </HeaderContainer>
         </Header>
     );
-}
+};
 
 export default Navbar;
