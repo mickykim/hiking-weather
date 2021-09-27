@@ -10,12 +10,13 @@ import {
 import { FaBars } from "react-icons/fa";
 import Searchbar from "../Searchbar";
 
-interface Props {
-    toggleSidebar: () => void;
-    small: boolean;
+export interface Props {
+    toggleSidebar?: () => void;
+    small?: boolean;
+    logoLink?: string;
 }
 
-const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
+const Navbar: React.FC<Props> = ({ toggleSidebar, logoLink = "main" }) => {
     const [scrollNav, setScrollNav] = useState<boolean>(false);
 
     const toggleScrollNav = () => {
@@ -33,9 +34,9 @@ const Navbar: React.FC<Props> = ({ toggleSidebar }) => {
     return (
         <Header scrollNav={scrollNav}>
             <HeaderContainer>
-                <Logo>HikingWeather</Logo>
-                <MobileLogo>HW</MobileLogo>
-                <Searchbar small={true} active={scrollNav} />
+                <Logo to={logoLink}>HikingWeather</Logo>
+                <MobileLogo to={logoLink}>HW</MobileLogo>
+                <Searchbar active={scrollNav} />
                 <NavigationLinks headerOffset={-50} />
                 <MobileIcon>
                     <FaBars onClick={toggleSidebar} />

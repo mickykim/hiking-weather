@@ -1,6 +1,11 @@
 import React from "react";
 import { NavbarItem, NavbarLink, NavbarMenu } from "./NavbarElements";
-function NavigationLinks({ headerOffset }) {
+
+export interface Props {
+    headerOffset: number;
+}
+
+const NavigationLinks: React.FC<Props> = ({ headerOffset }) => {
     return (
         <NavbarMenu>
             <NavbarItem>
@@ -52,6 +57,6 @@ function NavigationLinks({ headerOffset }) {
             </NavbarItem>
         </NavbarMenu>
     );
-}
+};
 
 export default NavigationLinks;

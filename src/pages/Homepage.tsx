@@ -14,10 +14,10 @@ const Homepage = () => {
     };
     return (
         <div>
-            <Navbar toggleSidebar={toggleSidebar} />
-            <Sidebar isOpen={sidebarIsOpen} toggleSidebar={toggleSidebar} />
+            <Navbar toggleSidebar={toggleSidebar} logoLink="main" />
+            <Sidebar toggleSidebar={toggleSidebar} isOpen={sidebarIsOpen} />
             <HeroSection id="main" />
-            <CardSection />
+            {/* <CardSection /> */}
             <InfoSection {...aboutData} />
             <InfoSection {...airData} />
             <InfoSection {...mayoData} />

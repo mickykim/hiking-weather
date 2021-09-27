@@ -17,7 +17,7 @@ export const aboutData: Data = {
     tell you the current hiking conditions.`,
     colorTheme: false,
     reverse: false,
-    img: require("../../assets/images/weather.svg").default,
+    img: require("../../assets/images/hiking.svg").default,
     altImg: "weather",
 };
 
@@ -28,7 +28,7 @@ export const airData: Data = {
     subtitle: `We calculate the air quality by checking current 
     air conditionswith respect to the general guidelines provided 
     on air quality.`,
-    colorTheme: false,
+    colorTheme: true,
     reverse: true,
     img: require("../../assets/images/hikingSecondary.svg").default,
 

@@ -10,9 +10,9 @@ import {
 import aboutImg from "../../assets/images/hiking.svg";
 
 export interface Props {
-    xl: boolean;
-    shaded: boolean;
-    img: string;
+    xl?: boolean;
+    shaded?: boolean;
+    img?: string;
 }
 
 const CardSection: React.FC<Props> = ({ xl, shaded, img }) => {

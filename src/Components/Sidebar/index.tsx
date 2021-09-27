@@ -3,7 +3,6 @@ import {
     SidebarContainer,
     Icon,
     CloseIcon,
-    Item,
     Menu,
     ScrollLink,
     ButtonLink,
@@ -12,7 +11,17 @@ import {
     SidebarWrapper,
 } from "./SidebarElements";
 
-const Sidebar = ({ toggleSidebar, isOpen }) => {
+export interface Props {
+    toggleSidebar?: () => void;
+    isOpen?: boolean;
+    buttonLink?: string;
+}
+
+const Sidebar: React.FC<Props> = ({
+    toggleSidebar,
+    isOpen,
+    buttonLink = "main",
+}) => {
     return (
         <>
             <SidebarContainer isOpen={isOpen}>
@@ -28,7 +37,7 @@ const Sidebar = ({ toggleSidebar, isOpen }) => {
                         <ScrollLink to="singup">Signup</ScrollLink>
                     </Menu>
                     <ButtonWrapper>
-                        <ButtonLink>Sign In</ButtonLink>
+                        <ButtonLink to={buttonLink}>Sign In</ButtonLink>
                     </ButtonWrapper>
                 </SidebarWrapper>
             </SidebarContainer>

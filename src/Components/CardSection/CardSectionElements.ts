@@ -7,7 +7,6 @@ export const CardSectionContainer = styled.div`
     height: 700px;
 `;
 
-// TODO: Need to change this to a grid
 export const CardSectionWrapper = styled.div`
     width: 100%;
     padding: 1rem 1rem;

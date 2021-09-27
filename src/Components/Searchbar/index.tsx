@@ -7,7 +7,12 @@ import {
 import { FaSearch } from "react-icons/fa";
 import { RiSearch2Line } from "react-icons/ri";
 
-const Searchbar = ({ lg, active }) => {
+export interface Props {
+    lg?: boolean;
+    active?: boolean;
+}
+
+const Searchbar: React.FC<Props> = ({ lg, active }) => {
     return (
         <SearchbarContainer active={active}>
             <SearchbarInput lg={lg} placeholder="Enter your destination..." />

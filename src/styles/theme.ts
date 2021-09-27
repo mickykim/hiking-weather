@@ -11,6 +11,7 @@ export default {
     milkWhite: "#F9F9FB",
     trueWhite: "#FFFFFF",
     black: "#1a1a1a",
+    lightgrey: "#E5E5E5",
     grey: "#353535",
 
     primary: "#2a9d8f",

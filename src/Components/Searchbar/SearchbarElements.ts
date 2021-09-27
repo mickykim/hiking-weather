@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { Props } from "./index";
 
-export const SearchbarContainer = styled.div`
+export const SearchbarContainer = styled.div<Props>`
     display: ${(props) => (props.active ? "flex" : "none")};
     align-items: flex-end;
     width: 100%;
     max-width: 650px;
     margin: 0 1rem;
 `;
-export const SearchbarInput = styled.input`
+export const SearchbarInput = styled.input<Props>`
     width: 100%;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
@@ -28,7 +29,7 @@ export const SearchbarInput = styled.input`
     }
 `;
 
-export const ButtonContainer = styled.button`
+export const ButtonContainer = styled.button<Props>`
     display: flex;
     justify-content: center;
     align-items: center;

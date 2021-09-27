@@ -1,8 +1,13 @@
 import styled from "styled-components";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import { Props } from "./index";
 
-export const Header = styled.header`
+interface PropsStyled extends Props {
+    scrollNav?: boolean;
+}
+
+export const Header = styled.header<PropsStyled>`
     display: flex;
     justify-content: center;
     position: sticky;

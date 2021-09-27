@@ -5,7 +5,7 @@ import { Props } from "./index";
 export const InfoContainer = styled.div<Props>`
     color: #000;
     background: ${(props) =>
-        props.colorTheme ? props.theme.primary : props.theme.neutral};
+        props.colorTheme ? props.theme.lightgrey : props.theme.neutral};
 `;
 
 export const InfoWrapper = styled.div`
@@ -55,10 +55,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopText = styled.p<Props>`
-    color: ${(props) =>
-        props.colorTheme
-            ? props.theme.secondaryTextDark
-            : props.theme.secondaryText};
+    color: ${(props) => props.theme.secondaryText};
     font-size: 1rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -73,14 +70,13 @@ export const TopText = styled.p<Props>`
 
 export const Heading = styled.h1<Props>`
     display: inline-block;
-    color: ${(props) =>
-        props.colorTheme
-            ? props.theme.primaryTextDark
-            : props.theme.primaryText};
+    color: ${(props) => props.theme.primaryText};
     background: linear-gradient(
         -100deg,
         white 0%,
-        ${(props) => props.theme.orange} 90%,
+        ${(props) =>
+                props.colorTheme ? props.theme.primary : props.theme.orange}
+            90%,
         white 100%
     );
     background-size: 100% 120%;
@@ -98,10 +94,7 @@ export const Heading = styled.h1<Props>`
 `;
 
 export const Subtitle = styled.h2<Props>`
-    color: ${(props) =>
-        props.colorTheme
-            ? props.theme.primaryTextDark
-            : props.theme.primaryText};
+    color: ${(props) => props.theme.primaryText};
     font-weight: 300;
     font-size: 1.6rem;
     @media screen and (max-width: 768px) {
