@@ -22,26 +22,26 @@ export const aboutData: Data = {
 };
 
 export const airData: Data = {
-    id: "section2",
+    id: "section3",
     topText: "Analyze",
     heading: "Science you can trust",
     subtitle: `We calculate the air quality by checking current 
     air conditions with respect to the general guidelines provided 
     on air quality.`,
-    colorTheme: true,
-    reverse: true,
+    colorTheme: false,
+    reverse: false,
     img: require("../../assets/images/scienceNature.svg").default,
 
     altImg: "weather",
 };
 
 export const enjoyData: Data = {
-    id: "section3",
+    id: "section2",
     topText: "Enjoy",
     heading: "Experience perfection",
     subtitle: `Stop worrying about the possibilities and enjoy the present`,
-    colorTheme: false,
-    reverse: false,
+    colorTheme: true,
+    reverse: true,
     img: require("../../assets/images/hiking.svg").default,
 
     altImg: "weather",

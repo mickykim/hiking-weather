@@ -22,7 +22,8 @@ export const ImageBackground = styled.div`
         /* Actual Image */ url(${heroImage});
 
     /* background-image: url(${heroImage}); */
-    background-size: 1400px 600px;
+    background-size: 1920px 1080px;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
 `;

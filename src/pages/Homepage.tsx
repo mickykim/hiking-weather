@@ -19,8 +19,9 @@ const Homepage = () => {
             <HeroSection id="main" />
             {/* <CardSection /> */}
             <InfoSection {...aboutData} />
-            <InfoSection {...airData} />
             <InfoSection {...enjoyData} />
+            <InfoSection {...airData} />
+
             <Footer />
         </div>
     );

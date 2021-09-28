@@ -40,7 +40,7 @@ const NavigationLinks: React.FC<Props> = ({ headerOffset }) => {
                     spy={true}
                     offset={headerOffset}
                 >
-                    Analyze
+                    Enjoy
                 </NavbarLink>
             </NavbarItem>
             <NavbarItem>
@@ -52,7 +52,7 @@ const NavigationLinks: React.FC<Props> = ({ headerOffset }) => {
                     spy={true}
                     offset={headerOffset}
                 >
-                    Enjoy
+                    Analyze
                 </NavbarLink>
             </NavbarItem>
         </NavbarMenu>
